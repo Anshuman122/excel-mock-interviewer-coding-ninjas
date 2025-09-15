@@ -26,7 +26,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],  # add your frontends
+    allow_origins=["http://localhost:5173", "http://localhost:3000","https://anshuman-excel-mock-interviewer-coding-ninja.vercel.app",],  # add your frontends
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
