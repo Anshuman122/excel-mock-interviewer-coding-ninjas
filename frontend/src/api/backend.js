@@ -1,6 +1,6 @@
 // frontend/src/api/backend.js
 import axios from "axios";
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://excel-mock-interviewer-coding-ninjas.onrender.com";
 
 export const startSession = async () => {
   const resp = await axios.post(`${API_URL}/session`);
