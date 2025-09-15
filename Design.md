@@ -1,7 +1,8 @@
-📐 Design Document – Excel Mock Interviewer
-🎯 Strategy
+# 📐 Design Document – Excel Mock Interviewer
 
-Structured Interview Flow
+## 🎯 Strategy
+
+### Structured Interview Flow
 
 Start session → greet candidate → explain flow.
 
@@ -33,7 +34,7 @@ Includes Q, candidate answer, AI evaluation.
 
 Export as JSON and PDF.
 
-❄️ Cold Start Solution
+## ❄️ Cold Start Solution
 
 No pre-existing dataset of transcripts.
 
@@ -45,7 +46,7 @@ Leveraging expert seeding: manually written rubrics for evaluation.
 
 Over time → transcripts collected → fine-tuning possible.
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Add speech mode (voice-to-text + conversational).
 
@@ -59,7 +60,7 @@ Multiple Student Interview handling
 
 Richer PDF reports with charts + candidate benchmarking.
 
-3. excel-mock-interviewer-main\backend\transcripts
+## 3. excel-mock-interviewer-main\backend\transcripts
 
 sample_transcript_1.json → interview 1
 
@@ -67,7 +68,7 @@ sample_transcript_2.json → interview 2
 
 
 
-4. Final Testing Checklist
+## 4. Final Testing Checklist
 
 ✅ One candidate can complete end-to-end interview.
 
