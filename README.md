@@ -60,13 +60,13 @@ npm run dev
 ```bash
 👉 Access at http://localhost:5173
 ```
-### 🔹 Deployable links
+## 🔹 Deployable links
 
 Frontend (Vercel): Live App
 
 Backend (Render): API Server
 
-### * Sample Transcripts
+## * Sample Transcripts
 
 Found under /docs/samples/:
 
@@ -74,7 +74,7 @@ session1_transcript.json – Candidate answering basic Excel Qs.
 
 session2_transcript.json – Candidate attempting file-upload question.
 
-### * Features
+## * Features
 
 Multi-turn structured interview (text, design, file questions).
 
@@ -88,14 +88,14 @@ Transcript storage + downloadable report.
 
 CORS-enabled frontend ↔ backend integration.
 
-### * ow to Test Locally
+## * How to Test Locally
 
 ```bash
 Run backend → http://127.0.0.1:8000
 
 Run frontend → update backend.js API URL to local server.
 ```
-### * Try:
+## * Try:
 
 Start Interview.
 
