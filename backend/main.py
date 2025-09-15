@@ -35,6 +35,10 @@ app.add_middleware(
 class MessageRequest(BaseModel):
     answer: str
 
+@app.get("/")
+def home():
+    return {"message": "✅ Excel Mock Interviewer Backend is Running on Render!"}
+
 @app.get("/ping")
 def ping():
     return {"message": "Server is running!"}
