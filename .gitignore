@@ -1,0 +1,85 @@
+# ============================
+# Python cache & artifacts
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# ============================
+# Node / React (frontend)
+# ============================
+node_modules/
+dist/
+build/
+*.lock
+frontend/.vite/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================
+# OS generated files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# IDE / Editor settings
+# ============================
+.vscode/
+.idea/
+
+# ============================
+# Environment & secrets
+# ============================
+.env
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+pinecone_config.json
+redis.conf
+
+# ============================
+# Temp / uploads / reports
+# ============================
+temp_*
+*.xlsx
+*.xls
+*.csv
+*.pdf
+
+# Backend transcripts & uploads
+backend/transcripts/
+backend/uploads/
+
+# ============================
+# Streamlit (Phase 2 legacy)
+# ============================
+.streamlit/
+
+# ============================
+# Uvicorn / FastAPI reload
+# ============================
+*.pid
+
+# ============================
+# Redis / Pinecone data
+# ============================
+*.rdb
+dump.rdb
+appendonly.aof
