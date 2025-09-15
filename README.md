@@ -1,49 +1,55 @@
-AI-Powered Excel Mock Interviewer
-📌 Problem Context
+# 📊 AI-Powered Excel Mock Interviewer
 
-Excel proficiency is a core skill for Finance, Operations, and Data Analytics roles at Coding Ninjas.
+## 📌 Problem Context
+Excel proficiency is a **core skill** for Finance, Operations, and Data Analytics roles at Coding Ninjas.  
+
 Currently, Excel skill interviews are:
+- ⏳ **Time-consuming** for senior analysts  
+- ⚖️ **Inconsistent** in evaluation  
+- 🚧 A **bottleneck** in the hiring pipeline  
 
-Time-consuming for senior analysts.
+👉 This project solves these issues by creating an **AI-powered interviewer** that:
+- Automates Excel interviews  
+- Evaluates candidates intelligently  
+- Generates performance summaries  
 
-Inconsistent in evaluation.
+---
 
-A bottleneck in the hiring pipeline.
+## 🏗️ Architecture Overview
+**Flow:**  
+`Candidate → React Frontend (Vercel) → FastAPI Backend (Render) → Gemini API (Google Generative AI) → Evaluation Engine (rubric-based scoring + Excel validation) → Transcript Writer + PDF Report Generator`
 
-👉 This project solves that by creating an AI-powered interviewer that automates Excel interviews, evaluates candidates intelligently, and generates performance summaries.
+**Components:**
+- **Frontend:** React + Vite (Vercel)  
+- **Backend:** FastAPI (Render)  
+- **LLM:** Google Gemini (Generative AI)  
+- **Data Handling:** Session manager + transcripts  
+- **Reports:** JSON + downloadable PDF  
 
-🏗️ Architecture Overview
-Candidate → React Frontend (Vercel)
-           → FastAPI Backend (Render)
-               → Gemini API (Google Generative AI)
-               → Evaluation Engine (rubric-based scoring + Excel validation)
-               → Transcript Writer + PDF Report Generator
+---
 
+## ⚡ Stack Choices & Justification
 
-Frontend: React + Vite (Vercel)
+| Component     | Choice                | Why? |
+|---------------|-----------------------|------|
+| **Frontend**  | React (Vite) on Vercel | Fast deploy, interactive UI, free hosting |
+| **Backend**   | FastAPI on Render     | Lightweight, async, production-ready |
+| **AI Model**  | Google Gemini API     | Strong natural language eval, easy integration |
+| **Data**      | In-memory + transcripts | Simple PoC; extendable to DB in future |
+| **File Handling** | Pandas + openpyxl  | Excel validation at file-level |
+| **Hosting**   | Vercel + Render       | Free-tier friendly, quick deploys |
 
-Backend: FastAPI (Render)
+---
 
-LLM: Google Gemini (Generative AI)
+## 🛠️ Setup Instructions
 
-Data Handling: Session manager + transcripts
-
-Reports: JSON + downloadable PDF
-
-⚡ Stack Choices & Justification
-Component	Choice	Why?
-Frontend	React (Vite) on Vercel	Fast deploy, interactive UI, free hosting
-Backend	FastAPI on Render	Lightweight, async, production-ready
-AI Model	Google Gemini API	Strong natural language eval, easy integration
-Data Storage	In-memory + transcripts	Simple PoC; extendable to DB in future
-File Handling	Pandas + openpyxl	Excel validation at file-level
-Hosting	Vercel + Render	Free-tier friendly, quick deploys
-🛠️ Setup Instructions
-1. Backend (FastAPI)
+### 🔹 Backend (FastAPI)
+```bash
 git clone https://github.com/Anshuman122/excel-mock-interviewer-coding-ninjas.git
 cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload
+python -m uvicorn backend.main: app --reload
+
 
 2. Frontend (React)
 cd frontend
